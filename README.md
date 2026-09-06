@@ -30,33 +30,41 @@ Hardware – PCs, Cyclone II , USB flasher
 
 5.	For different input combinations generate the timing diagram.
 
+PROGRAM:
 
-**Program:**
+module exe2(a,b,c,d,f1,w,x,y,z,f2);
 
-module funct1(a,b,c,d,f1);
-input a,b,c,d;
-output f1;
-assign f1=((~b & ~d)|(~a & b & d)|(a & b & ~c));
+input a,b,c,d,w,x,y,z;
+
+output f1,f2;
+
+assign f1=((~b&~d)| (~a&b&d)| (a&b&~c))
+
+; assign f2=((~y&z)|(x&y)|(w&y)); 
+
 endmodule
-module funct2(w,x,y,z,f2);
-input w,x,y,z;
-output f2;
-assign f2=((~y & z)|( w & y )|(x & y));
-endmodule
 
-   
+
+
+
+Developed by:vignesh s
+
+RegisterNumber:212225040489
+
+**RTL realization**
+
+
+<img width="1620" height="853" alt="image" src="https://github.com/user-attachments/assets/bbcb1f45-17c6-4a8e-937c-52448b573b4f" />
+
+
 
 **RTL**
 
-<img width="837" height="515" alt="Screenshot 2025-10-07 085249" src="https://github.com/user-attachments/assets/8378aff8-1581-42e4-b14d-efac77092dfc" />
 
-![21](https://github.com/user-attachments/assets/58e4e4c8-08bd-4b2c-8c6e-11f826a857a4)
+<img width="1920" height="1022" alt="image" src="https://github.com/user-attachments/assets/bc4dc540-7b8f-481b-91ec-849a3a64cc87" />
 
-**Timinrng diadram**
 
-<img width="1917" height="534" alt="Screenshot 2025-10-07 091550" src="https://github.com/user-attachments/assets/e156f3f4-ba69-4fec-bdb0-870403114df6" />
 
-![22](https://github.com/user-attachments/assets/da88bc68-caed-409b-92fd-6bb7fc748feb)
 
 
 **Result:**
